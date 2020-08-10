@@ -7,10 +7,27 @@
 
 import SwiftUI
 
+struct AKPoint {
+    let x: Int
+    let y: Int
+}
+
+struct LineChartLegendoidConfiguration {
+    let color: Color
+    let text: String
+}
+
+struct LineChartLegendConfiguration {
+    let legendTitle: String
+    let titleEdge: Edge
+    let legendoids: [LineChartLegendoidConfiguration]
+}
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LineChartLegendView(
+            LineChartBrowsingSuccess(), AKPoint(x: 0, y: 0)
+        )
     }
 }
 

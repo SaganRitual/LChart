@@ -12,6 +12,11 @@
 		D4CFEAE924E0E21A00BDD2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CFEAE824E0E21A00BDD2BA /* Assets.xcassets */; };
 		D4CFEAEC24E0E21A00BDD2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CFEAEB24E0E21A00BDD2BA /* Preview Assets.xcassets */; };
 		D4CFEAEF24E0E21A00BDD2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CFEAED24E0E21A00BDD2BA /* Main.storyboard */; };
+		D4CFEAF924E0F22B00BDD2BA /* LineChartLegendoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAF824E0F22B00BDD2BA /* LineChartLegendoidView.swift */; };
+		D4CFEAFC24E0F26100BDD2BA /* ColoredSquareToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAFB24E0F26100BDD2BA /* ColoredSquareToggle.swift */; };
+		D4CFEAFE24E0F2C000BDD2BA /* LineChartConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */; };
+		D4CFEB0024E0F5C300BDD2BA /* LineChartLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */; };
+		D4CFEB0224E10EF600BDD2BA /* LineChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		D4CFEAEE24E0E21A00BDD2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4CFEAF024E0E21A00BDD2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CFEAF124E0E21A00BDD2BA /* LChart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LChart.entitlements; sourceTree = "<group>"; };
+		D4CFEAF824E0F22B00BDD2BA /* LineChartLegendoidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLegendoidView.swift; sourceTree = "<group>"; };
+		D4CFEAFB24E0F26100BDD2BA /* ColoredSquareToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSquareToggle.swift; sourceTree = "<group>"; };
+		D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartConfigurations.swift; sourceTree = "<group>"; };
+		D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLegendView.swift; sourceTree = "<group>"; };
+		D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,8 @@
 		D4CFEAE324E0E21900BDD2BA /* LChart */ = {
 			isa = PBXGroup;
 			children = (
+				D4CFEAFA24E0F25100BDD2BA /* Misc */,
+				D4CFEAF724E0F21900BDD2BA /* LineChart */,
 				D4CFEAE424E0E21900BDD2BA /* AppDelegate.swift */,
 				D4CFEAE624E0E21900BDD2BA /* ContentView.swift */,
 				D4CFEAE824E0E21A00BDD2BA /* Assets.xcassets */,
@@ -72,6 +84,25 @@
 				D4CFEAEB24E0E21A00BDD2BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4CFEAF724E0F21900BDD2BA /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */,
+				D4CFEAF824E0F22B00BDD2BA /* LineChartLegendoidView.swift */,
+				D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */,
+				D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		D4CFEAFA24E0F25100BDD2BA /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				D4CFEAFB24E0F26100BDD2BA /* ColoredSquareToggle.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CFEB0224E10EF600BDD2BA /* LineChartHeaderView.swift in Sources */,
 				D4CFEAE724E0E21900BDD2BA /* ContentView.swift in Sources */,
 				D4CFEAE524E0E21900BDD2BA /* AppDelegate.swift in Sources */,
+				D4CFEB0024E0F5C300BDD2BA /* LineChartLegendView.swift in Sources */,
+				D4CFEAF924E0F22B00BDD2BA /* LineChartLegendoidView.swift in Sources */,
+				D4CFEAFE24E0F2C000BDD2BA /* LineChartConfigurations.swift in Sources */,
+				D4CFEAFC24E0F26100BDD2BA /* ColoredSquareToggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
