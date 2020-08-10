@@ -17,6 +17,9 @@
 		D4CFEAFE24E0F2C000BDD2BA /* LineChartConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */; };
 		D4CFEB0024E0F5C300BDD2BA /* LineChartLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */; };
 		D4CFEB0224E10EF600BDD2BA /* LineChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */; };
+		D4CFEB0424E11BD800BDD2BA /* LineChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0324E11BD800BDD2BA /* LineChartDataBackdrop.swift */; };
+		D4CFEB0624E11D4400BDD2BA /* LineChartTheChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */; };
+		D4CFEB0824E11E2F00BDD2BA /* ArkoniaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0724E11E2F00BDD2BA /* ArkoniaLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartConfigurations.swift; sourceTree = "<group>"; };
 		D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLegendView.swift; sourceTree = "<group>"; };
 		D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartHeaderView.swift; sourceTree = "<group>"; };
+		D4CFEB0324E11BD800BDD2BA /* LineChartDataBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartDataBackdrop.swift; sourceTree = "<group>"; };
+		D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartTheChartView.swift; sourceTree = "<group>"; };
+		D4CFEB0724E11E2F00BDD2BA /* ArkoniaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkoniaLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				D4CFEAF024E0E21A00BDD2BA /* Info.plist */,
 				D4CFEAF124E0E21A00BDD2BA /* LChart.entitlements */,
 				D4CFEAEA24E0E21A00BDD2BA /* Preview Content */,
+				D4CFEB0724E11E2F00BDD2BA /* ArkoniaLayout.swift */,
 			);
 			path = LChart;
 			sourceTree = "<group>";
@@ -90,9 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				D4CFEAFD24E0F2C000BDD2BA /* LineChartConfigurations.swift */,
+				D4CFEB0324E11BD800BDD2BA /* LineChartDataBackdrop.swift */,
+				D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */,
 				D4CFEAF824E0F22B00BDD2BA /* LineChartLegendoidView.swift */,
 				D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */,
-				D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */,
+				D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CFEB0424E11BD800BDD2BA /* LineChartDataBackdrop.swift in Sources */,
 				D4CFEB0224E10EF600BDD2BA /* LineChartHeaderView.swift in Sources */,
 				D4CFEAE724E0E21900BDD2BA /* ContentView.swift in Sources */,
 				D4CFEAE524E0E21900BDD2BA /* AppDelegate.swift in Sources */,
@@ -182,6 +192,8 @@
 				D4CFEAF924E0F22B00BDD2BA /* LineChartLegendoidView.swift in Sources */,
 				D4CFEAFE24E0F2C000BDD2BA /* LineChartConfigurations.swift in Sources */,
 				D4CFEAFC24E0F26100BDD2BA /* ColoredSquareToggle.swift in Sources */,
+				D4CFEB0624E11D4400BDD2BA /* LineChartTheChartView.swift in Sources */,
+				D4CFEB0824E11E2F00BDD2BA /* ArkoniaLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

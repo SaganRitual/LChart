@@ -1,6 +1,11 @@
 import SwiftUI
 
 protocol LineChartConfiguration {
+    var chartBackdropColor: Color { get }
+    var horizontalLines: Bool { get }
+    var verticalLines: Bool { get }
+    var xAxisShape: AxisShape { get }
+    var yAxisShape: AxisShape { get }
     var chartTitle: String { get }
     var legends: [LineChartLegendConfiguration] { get }
 
@@ -8,7 +13,16 @@ protocol LineChartConfiguration {
     func getLegendoid(at: AKPoint) -> LineChartLegendoidConfiguration?
 }
 
+enum AxisShape { case linear, log }
+enum GridLinesDirection { case vertical, horizontal }
+
 struct LineChartBrowsingSuccess: LineChartConfiguration {
+    let chartBackdropColor = Color.gray
+    let horizontalLines = true
+    let verticalLines = true
+    let xAxisShape = AxisShape.linear
+    let yAxisShape = AxisShape.linear
+
     let chartTitle = "Browsing Success"
 
     func getLegend(at: AKPoint) -> LineChartLegendConfiguration? {

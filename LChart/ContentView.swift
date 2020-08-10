@@ -24,11 +24,7 @@ struct LineChartLegendConfiguration {
 }
 
 struct ContentView: View {
-    var body: some View {
-        LineChartLegendView(
-            LineChartBrowsingSuccess(), AKPoint(x: 0, y: 0)
-        )
-    }
+    var body: some View { LineChartTheChartView(LineChartBrowsingSuccess()) }
 }
 
 struct ContentView_Previews: PreviewProvider {

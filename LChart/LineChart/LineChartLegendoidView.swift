@@ -8,7 +8,11 @@ struct LineChartLegendoidView: View {
 
     var body: some View {
         Toggle(akConfig.getLegendoid(at: legendCoordinates)!.text, isOn: $isOn)
-            .toggleStyle(ColoredSquareToggle(akConfig: akConfig, legendCoordinates: legendCoordinates))
+            .toggleStyle(ColoredSquareToggle(
+                isOn: $isOn,
+                akConfig: akConfig,
+                legendCoordinates: legendCoordinates
+            ))
     }
 }
 

@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct ColoredSquareToggle: ToggleStyle {
+    @Binding var isOn: Bool {
+        willSet { print("will set to \(newValue)") }
+    }
+
     let akConfig: LineChartConfiguration
     let legendCoordinates: AKPoint
 
@@ -16,12 +20,18 @@ struct ColoredSquareToggle: ToggleStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         return HStack {
-            Rectangle()
-                .foregroundColor(self.color)
-                .border(Color.black, width: 2)
-                .frame(width: 16, height: 16)
 
-            Text(labelText)
+            Button(action: {
+                isOn.toggle()
+            }) {
+                Rectangle()
+                    .foregroundColor(isOn ? self.color : Color.gray)
+                    .border(Color.black, width: 2)
+                    .frame(width: 16, height: 16)
+            }
+            .buttonStyle(PlainButtonStyle())
+
+            Text(labelText).foregroundColor(isOn ? Color.white : Color.gray)
         }
     }
 }
