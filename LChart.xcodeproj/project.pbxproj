@@ -20,6 +20,7 @@
 		D4CFEB0424E11BD800BDD2BA /* LineChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0324E11BD800BDD2BA /* LineChartDataBackdrop.swift */; };
 		D4CFEB0624E11D4400BDD2BA /* LineChartTheChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */; };
 		D4CFEB0824E11E2F00BDD2BA /* ArkoniaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0724E11E2F00BDD2BA /* ArkoniaLayout.swift */; };
+		D4CFEB0A24E1256000BDD2BA /* LineChartLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CFEB0924E1256000BDD2BA /* LineChartLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D4CFEB0324E11BD800BDD2BA /* LineChartDataBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartDataBackdrop.swift; sourceTree = "<group>"; };
 		D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartTheChartView.swift; sourceTree = "<group>"; };
 		D4CFEB0724E11E2F00BDD2BA /* ArkoniaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkoniaLayout.swift; sourceTree = "<group>"; };
+		D4CFEB0924E1256000BDD2BA /* LineChartLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D4CFEB0124E10EF600BDD2BA /* LineChartHeaderView.swift */,
 				D4CFEAF824E0F22B00BDD2BA /* LineChartLegendoidView.swift */,
 				D4CFEAFF24E0F5C300BDD2BA /* LineChartLegendView.swift */,
+				D4CFEB0924E1256000BDD2BA /* LineChartLineView.swift */,
 				D4CFEB0524E11D4400BDD2BA /* LineChartTheChartView.swift */,
 			);
 			path = LineChart;
@@ -194,6 +197,7 @@
 				D4CFEAFC24E0F26100BDD2BA /* ColoredSquareToggle.swift in Sources */,
 				D4CFEB0624E11D4400BDD2BA /* LineChartTheChartView.swift in Sources */,
 				D4CFEB0824E11E2F00BDD2BA /* ArkoniaLayout.swift in Sources */,
+				D4CFEB0A24E1256000BDD2BA /* LineChartLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

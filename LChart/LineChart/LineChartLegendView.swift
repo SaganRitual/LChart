@@ -7,7 +7,7 @@ struct LineChartLegendView: View {
     let checkLeft: Bool
     let legendCoordinates: AKPoint
 
-    let legendoidPositions = [
+    static let legendoidPositions = [
         AKPoint(x: 0, y: 0), AKPoint(x: 0, y: 1), AKPoint(x: 0, y: 2),
         AKPoint(x: 1, y: 0), AKPoint(x: 1, y: 1), AKPoint(x: 1, y: 2)
     ]
@@ -21,7 +21,15 @@ struct LineChartLegendView: View {
         self.checkLeft = legendCoordinates.x == 0
 
         // Figure out which legendoids we'll be displaying
-        liveLegendoidPositions = legendoidPositions.compactMap {
+        liveLegendoidPositions =
+            LineChartLegendView.getLiveLegendoidPositions(akConfig, legendCoordinates)
+    }
+
+    static func getLiveLegendoidPositions(
+        _ akConfig: LineChartConfiguration,
+        _ legendCoordinates: AKPoint
+    ) -> [AKPoint] {
+        return legendoidPositions.compactMap {
             if $0.x != legendCoordinates.x { return nil }
             return akConfig.getLegendoid(at: $0) == nil ? nil : $0
         }
